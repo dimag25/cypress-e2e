@@ -1,9 +1,16 @@
 const fs = require('fs-extra')
-
+const logsPath = 'logs/combined.log'
 function Logger(log) {
-	fs.writeFileSync('logs/combined.log', `${getCurrentTimeFormatted()} ${log} \n`, {
-		flag: 'a+',
-	})
+	if (!fs.existsSync(logsPath)) {
+		fs.mkdirSync('logs')
+	}
+	fs.writeFileSync(
+		'logs/combined.log',
+		`${getCurrentTimeFormatted()} ${log} \n`,
+		{
+			flag: 'a+',
+		}
+	)
 }
 
 /**

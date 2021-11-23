@@ -1,0 +1,7 @@
+{
+    "env": {
+        "username":"dimag@test.com",
+        "password":"Test1234",
+        "apiURL":"https://conduit.productionready.io/api"
+	}
+}

@@ -1,0 +1,95 @@
+[
+  {
+    "description": "    As a logged in user\n    I can create new article\n\n    As a logged in user\n    I can delete existing article",
+    "keyword": "Feature",
+    "name": "Articles E2E flow - Create & Delete",
+    "line": 2,
+    "id": "articles-e2e-flow---create-&-delete",
+    "tags": [
+      {
+        "name": "@UI",
+        "line": 1
+      }
+    ],
+    "uri": "article.feature",
+    "elements": [
+      {
+        "id": "articles-e2e-flow---create-&-delete;create-new-article",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Create new Article",
+        "tags": [
+          {
+            "name": "@UI",
+            "line": 1
+          },
+          {
+            "name": "@Smoke",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I can create new article",
+            "result": {
+              "status": "passed",
+              "duration": 15724000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Article created succefully",
+            "result": {
+              "status": "passed",
+              "duration": 4180000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "articles-e2e-flow---create-&-delete;delete-existing-article",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Delete existing Article",
+        "tags": [
+          {
+            "name": "@UI",
+            "line": 1
+          },
+          {
+            "name": "@Smoke",
+            "line": 15
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "I can delete existing article",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 2000ms: Expected to find content: 'Title #28232' but never did.\n    at Function.deleteArticleByTitle (https://angular.realworld.io/__cypress/tests?p=cypress\\integration\\cucumber_tests\\article.feature:145:10)\n    at Context.eval (https://angular.realworld.io/__cypress/tests?p=cypress\\integration\\cucumber_tests\\article.feature:61:28)\n    at Context.resolveAndRunStepDefinition (https://angular.realworld.io/__cypress/tests?p=cypress\\integration\\cucumber_tests\\article.feature:13195:29)\n    at Context.eval (https://angular.realworld.io/__cypress/tests?p=cypress\\integration\\cucumber_tests\\article.feature:12516:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "Article deleted succefully",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

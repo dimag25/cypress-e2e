@@ -1,0 +1,175 @@
+{
+	"articles": [
+		{
+			"slug": "This-is-a-title-238",
+			"title": "This is a title",
+			"description": "This is a description",
+			"body": "This is a body",
+			"createdAt": "2021-11-15T14:41:03.017Z",
+			"updatedAt": "2021-11-15T14:41:03.017Z",
+			"tagList": [],
+			"author": {
+				"username": "dimag",
+				"bio": null,
+				"image": "https://api.realworld.io/images/smiley-cyrus.jpeg"
+			},
+			"comments": [],
+			"favoritesCount": 1,
+			"favorited": true
+		},
+		{
+			"slug": "Create-a-new-implementation-yo-106",
+			"title": "Create a new implementation yo",
+			"description": "join the community by creating a new implementation",
+			"body": "Share your knowledge and enpower the community by creating a new implementation",
+			"createdAt": "2021-11-13T12:12:16.463Z",
+			"updatedAt": "2021-11-14T01:32:36.354Z",
+			"tagList": ["implementations"],
+			"author": {
+				"username": "Gerome",
+				"bio": null,
+				"image": "https://api.realworld.io/images/demo-avatar.png"
+			},
+			"comments": [
+				{
+					"id": 4,
+					"createdAt": "2021-11-13T12:12:16.617Z",
+					"updatedAt": "2021-11-13T12:12:16.617Z",
+					"body": "Before starting a new implementation, please check if there is any work in progress for the stack you want to work on.",
+					"author": {
+						"username": "Gerome",
+						"bio": null,
+						"image": "https://api.realworld.io/images/demo-avatar.png"
+					}
+				},
+				{
+					"id": 5,
+					"createdAt": "2021-11-13T12:12:16.758Z",
+					"updatedAt": "2021-11-13T12:12:16.758Z",
+					"body": "If someone else has started working on an implementation, consider jumping in and helping them! by contacting the author.",
+					"author": {
+						"username": "Gerome",
+						"bio": null,
+						"image": "https://api.realworld.io/images/demo-avatar.png"
+					}
+				},
+				{
+					"id": 66,
+					"createdAt": "2021-11-15T11:40:13.272Z",
+					"updatedAt": "2021-11-15T11:40:13.271Z",
+					"body": "That's a comment right",
+					"author": {
+						"username": "tester",
+						"bio": null,
+						"image": "https://api.realworld.io/images/smiley-cyrus.jpeg"
+					}
+				},
+				{
+					"id": 67,
+					"createdAt": "2021-11-15T11:44:36.848Z",
+					"updatedAt": "2021-11-15T11:44:36.848Z",
+					"body": "1",
+					"author": {
+						"username": "tester",
+						"bio": null,
+						"image": "https://api.realworld.io/images/smiley-cyrus.jpeg"
+					}
+				},
+				{
+					"id": 70,
+					"createdAt": "2021-11-15T12:17:40.923Z",
+					"updatedAt": "2021-11-15T12:17:40.923Z",
+					"body": "你好吗",
+					"author": {
+						"username": "boboan",
+						"bio": null,
+						"image": "https://img0.baidu.com/it/u=1282825845,3044288264&fm=26&fmt=auto"
+					}
+				}
+			],
+			"favoritesCount": 33,
+			"favorited": false
+		},
+		{
+			"slug": "Explore-implementations-106",
+			"title": "Explore implementations",
+			"description": "discover the implementations created by the RealWorld community",
+			"body": "Over 100 implementations have been created using various languages, libraries, and frameworks.\n\nExplore them on CodebaseShow.",
+			"createdAt": "2021-11-13T12:12:16.152Z",
+			"updatedAt": "2021-11-14T01:31:55.854Z",
+			"tagList": ["codebaseShow", "implementations"],
+			"author": {
+				"username": "Gerome",
+				"bio": null,
+				"image": "https://api.realworld.io/images/demo-avatar.png"
+			},
+			"comments": [
+				{
+					"id": 3,
+					"createdAt": "2021-11-13T12:12:16.313Z",
+					"updatedAt": "2021-11-13T12:12:16.313Z",
+					"body": "There are 3 categories: Frontend, Backend and FullStack",
+					"author": {
+						"username": "Gerome",
+						"bio": null,
+						"image": "https://api.realworld.io/images/demo-avatar.png"
+					}
+				},
+				{
+					"id": 73,
+					"createdAt": "2021-11-15T14:18:55.233Z",
+					"updatedAt": "2021-11-15T14:18:55.233Z",
+					"body": "hi",
+					"author": {
+						"username": "oskjadoon",
+						"bio": null,
+						"image": "https://api.realworld.io/images/smiley-cyrus.jpeg"
+					}
+				}
+			],
+			"favoritesCount": 23,
+			"favorited": false
+		},
+		{
+			"slug": "Welcome-to-RealWorld-project-1",
+			"title": "Welcome to RealWorld project",
+			"description": "Exemplary fullstack Medium.com clone powered by React, Angular, Node, Django, and many more",
+			"body": "See how the exact same Medium.com clone (called Conduit) is built using different frontends and backends. Yes, you can mix and match them, because they all adhere to the same API spec",
+			"createdAt": "2021-11-13T12:12:15.680Z",
+			"updatedAt": "2021-11-13T12:12:15.680Z",
+			"tagList": ["welcome", "introduction"],
+			"author": {
+				"username": "Gerome",
+				"bio": null,
+				"image": "https://api.realworld.io/images/demo-avatar.png"
+			},
+			"comments": [
+				{
+					"id": 1,
+					"createdAt": "2021-11-13T12:12:15.853Z",
+					"updatedAt": "2021-11-13T12:12:15.854Z",
+					"body": "While most \"todo\" demos provide an excellent cursory glance at a framework's capabilities, they typically don't convey the knowledge & perspective required to actually build real applications with it.",
+					"author": {
+						"username": "Gerome",
+						"bio": null,
+						"image": "https://api.realworld.io/images/demo-avatar.png"
+					}
+				},
+				{
+					"id": 2,
+					"createdAt": "2021-11-13T12:12:16.002Z",
+					"updatedAt": "2021-11-13T12:12:16.002Z",
+					"body": "RealWorld solves this by allowing you to choose any frontend (React, Angular, & more) and any backend (Node, Django, & more) and see how they power a real-world, beautifully designed full-stack app called Conduit.",
+					"author": {
+						"username": "Gerome",
+						"bio": null,
+						"image": "https://api.realworld.io/images/demo-avatar.png"
+					}
+				}
+			],
+			"favoritesCount": 16,
+			"favorited": false
+		}
+	],
+	"articlesCount": 4
+}

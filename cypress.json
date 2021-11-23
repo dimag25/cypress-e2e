@@ -1,0 +1,34 @@
+{
+	"video": true,
+	"defaultCommandTimeout": 2000,
+	"pageLoadTimeout": 10000,
+	"baseUrl": "https://angular.realworld.io/",
+	"testFiles": "**/*.{spec.js,feature}",
+	"reporterOptions": {
+		"reportDir": "cypress/reports",
+		"overwrite": true,
+		"html": true,
+		"json": false
+	},
+	"env": {
+		"allure": "true",
+		"allureResultsPath": "allure-results",
+		"allureAttachRequests": true,
+		"allureLogGherkin": true,
+		"username": "dimag@test.com",
+		"password": "Test1234",
+		"apiURL": "https://conduit.productionready.io/api"
+	},
+	"db": {
+		"userName": "RIAuto",
+		"password": "@utomation",
+		"server": "RIAUTO01",
+		"options": {
+			"database": "SKIPI_Mirror",
+			"encrypt": true,
+			"rowCollectionOnRequestCompletion" : true
+		}
+	},
+	"retries": 0,
+	"projectId": "xdg249"
+}

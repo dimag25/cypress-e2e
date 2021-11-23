@@ -1,0 +1,144 @@
+[
+  {
+    "description": "    As a valid user\n    I can login to application\n\n    As a invalid user\n    I cannot login to application",
+    "keyword": "Feature",
+    "name": "Login to application",
+    "line": 2,
+    "id": "login-to-application",
+    "tags": [
+      {
+        "name": "@UI",
+        "line": 1
+      }
+    ],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "login-to-application;valid-login",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Valid Login",
+        "tags": [
+          {
+            "name": "@UI",
+            "line": 1
+          },
+          {
+            "name": "@E2E",
+            "line": 10
+          },
+          {
+            "name": "@epic(\"Epic-LoginToApplication\")",
+            "line": 11
+          },
+          {
+            "name": "@feature(\"feature-LoginToApplication\")",
+            "line": 12
+          },
+          {
+            "name": "@owner(\"dima.g\")",
+            "line": 13
+          },
+          {
+            "name": "@issue(\"jira\",\"https://jira-gi.sapiens.com/browse/AUTO-916\")",
+            "line": 14
+          },
+          {
+            "name": "@link(\"link\",\"https://jira-gi.sapiens.com/browse/AUTO-916\")",
+            "line": 15
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "I open login page",
+            "result": {
+              "status": "passed",
+              "duration": 5325000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I fill username with \"dimag@test.com\" and password with \"Test1234\" and click submit",
+            "result": {
+              "status": "passed",
+              "duration": 1388000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I should see homepage and User logged in",
+            "result": {
+              "status": "passed",
+              "duration": 1605000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-to-application;invalid-login",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Invalid Login",
+        "tags": [
+          {
+            "name": "@UI",
+            "line": 1
+          },
+          {
+            "name": "@E2E",
+            "line": 21
+          },
+          {
+            "name": "@issue(\"jira\",\"https://jira-gi.sapiens.com/browse/AUTO-916\")",
+            "line": 22
+          },
+          {
+            "name": "@link(\"link\",\"https://jira-gi.sapiens.com/browse/AUTO-916\")",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I open login page",
+            "result": {
+              "status": "passed",
+              "duration": 1199000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I fill username with \"error_email\" and password with \"***\" and click submit",
+            "result": {
+              "status": "passed",
+              "duration": 889000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "I should seee error message",
+            "result": {
+              "status": "passed",
+              "duration": 511000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

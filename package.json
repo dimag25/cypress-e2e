@@ -1,0 +1,51 @@
+{
+	"name": "cypress-e2e",
+	"version": "1.0.0",
+	"description": "end-to-end testing with cypress",
+	"main": "index.js",
+	"scripts": {
+		"cy:open": "cypress open --env configFile=qa",
+		"cy:run": "cypress run --env configFile=qa",
+		"cy:smoke": "npx cypress run --env tags=Smoke configFile=qa",
+		"cy:E2E": "npx cypress run --env tags=E2E allure=true configFile=qa --reporter mochawesome",
+		"cy:API": "npx cypress run --env tags=API configFile=qa",
+		"cy:bdd": "npx cypress-tags run -e TAGS=\"@E2E\"",
+		"cy:run:dashboard": "npx cypress run --record --key 3207cbb7-c58b-4f0e-87ad-2257df78831e"
+	},
+	"keywords": [
+		"cypress",
+		"e2e"
+	],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"cypress-cucumber-preprocessor": "^4.3.0",
+		"faker": "^5.5.3",
+		"mochawesome": "^7.0.1",
+		"multiple-cucumber-html-reporter": "^1.18.0",
+		"prettier": "^1.19.1",
+		"winston": "^3.3.3"
+	},
+	"cypress-cucumber-preprocessor": {
+		"nonGlobalStepDefinitions": true,
+		"cucumberJson": {
+			"generate": true,
+			"outputFolder": "cypress/cucumber-json",
+			"filePrefix": "",
+			"fileSuffix": ".cucumber"
+		}
+	},
+	"devDependencies": {
+		"@shelex/cypress-allure-plugin": "^2.19.5",
+		"allure-commandline": "^2.13.8",
+		"cypress": "^9.0.0",
+		"cypress-multi-reporters": "^1.5.0",
+		"cypress-select-tests": "^1.7.1",
+		"cypress-sql-server": "^1.0.0",
+		"mocha": "^9.1.3",
+		"mocha-junit-reporter": "^2.0.2",
+		"ts-loader": "^9.2.6",
+		"typescript": "^4.4.4",
+		"webpack": "^5.64.0"
+	}
+}

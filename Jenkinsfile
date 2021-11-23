@@ -20,11 +20,7 @@ pipeline {
                         bat 'npm run cy:run:dashboard'
                     }
                 }
-                  stage('tester C') {
-                    steps {
-                        bat 'npm run cy:run:dashboard'
-                    }
-                }
+               
             }
         }
 

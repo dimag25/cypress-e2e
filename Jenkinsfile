@@ -13,14 +13,7 @@ pipeline {
                     steps {
                         bat 'npm run cy:run:dashboard'
                     }
-                }
-
-                stage('tester B') {
-                    steps {
-                        bat 'npm run cy:run:dashboard'
-                    }
-                }
-               
+                } 
             }
         }
 

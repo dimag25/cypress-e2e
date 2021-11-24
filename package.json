@@ -5,6 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"cy:open": "cypress open --env configFile=qa",
+		"cy:oneSpec":"cypress run --spec \".\\cypress\\integration\\e2e_tests\\UI_Login.spec.js",
 		"cy:run": "cypress run --env configFile=qa",
 		"cy:smoke": "npx cypress run --env tags=Smoke configFile=qa",
 		"cy:E2E": "npx cypress run --env tags=E2E allure=true configFile=qa --reporter mochawesome",

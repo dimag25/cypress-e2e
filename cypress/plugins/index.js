@@ -17,11 +17,16 @@ function getConfigurationByFile(file) {
 
 function writeAllureEnvironmentConfig(browser) {
 	const propertiesFilePath = './allure-results/environment.properties'
+	const allureResultsPath = 'allure-results'
 	const cypressJson = JSON.parse(fs.readFileSync('cypress.json'))
 	const envConfigs = `browser=${browser}\n url=${cypressJson.baseUrl}\n userName=${cypressJson.env.username}\n`
-	if (!fs.existsSync(propertiesFilePath)) {
-		fs.mkdirSync('allure-results')
+	//clean previous allure-results
+	if (fs.existsSync(allureResultsPath)) {
+		fs.rmdirSync(allureResultsPath, { recursive: true })
 	}
+	//create new results folder
+	fs.mkdirSync(allureResultsPath)
+	//write new properties file to allure-results.
 	fs.writeFileSync(propertiesFilePath, envConfigs)
 }
 /**
